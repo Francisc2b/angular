@@ -1,0 +1,11 @@
+<h2>Editar Pedido</h2>
+
+<label>Descripción Pedido</label>
+
+<input type=“text”  (input)="onUpdateDescricpionPedido($event)"/>
+
+<p>{{ pedido.desc }} </p>
+
+<label>Descripción Pedido (ngModel)</label>
+<input type=“text”   [(ngModel)]="pedido.desc">
+<p>{{ pedido.desc }} </p>

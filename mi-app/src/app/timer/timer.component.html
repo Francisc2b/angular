@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+    <div class="navbar-header">
+    <strong class="navbar-brand">Mi Timer</strong>
+    </div>
+    </div>
+</nav>
+
+
+<div class="text-center">
+    <img src="assets/img/timer.png" alt="Timer">
+    <h1> {{ minutes }}:{{ seconds | number:'2.0' }}</h1>
+    <p>
+    <button class="btn btn-danger" (click)="togglePause()">{{ buttonLabel }}</button>
+    </p>
+   </div>
